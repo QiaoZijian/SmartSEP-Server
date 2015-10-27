@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>教师页面</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font: 13px Helvetica, Arial; }
+        form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+        form input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+        form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+        #messages { list-style-type: none; margin: 0; padding: 0; }
+        #messages li { padding: 5px 10px; }
+        #messages li:nth-child(odd) { background: #eee; }
+        div button {margin-left: 50px; margin-top: 15px; font-size: 20px;}
+    </style>
+</head>
+<body>
+    <div>
+        <input id="className" />
+        <button id="submit">开设课程</button>
+    </div>
+    <div>
+        <button id="start">开始上课</button>
+        <button id="shutDown">下课</button>
+    </div>
+
+    <ul id="messages"></ul>
+
+    <form action="" method="post">
+        <input id="m" autocomplete="off" /><button id="aa">Send</button>
+    </form>
+
+
+    <script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+    <script src="javascripts/jquery-2.0.3.min.js"></script>
+    <script src="javascripts/replayControl.js"></script>
+    <script src="javascripts/teaSocketFront.js"></script>
+
+</body>
+</html>
